@@ -14,4 +14,4 @@ ENV APACHE_LOG_DIR="/var/log/apache2"
 LABEL Description="WebserverTor - Debian+apache2+php7+torRelay"
 EXPOSE 80
 RUN chown -R www-data: /var/www/html/.
-CMD /etc/init.d/apache2 start && /bin/bash echo "Instalação Finalizada"  && /bin/bash
+CMD /etc/init.d/apache2 start && /bin/bash echo "Instalação Finalizada!! Não se esqueça de salvar a chave private.key!!"  && /bin/bash
