@@ -11,6 +11,7 @@ ENV APACHE_PID_FILE="/var/run/apache2.pid"
 ENV APACHE_RUN_USER="www-data"
 ENV APACHE_RUN_GROUP="www-data"
 ENV APACHE_LOG_DIR="/var/log/apache2"
+ADD  https://c83.pcloud.com/dpZR1j5CpZCEvLUpZzycIZZcUG7I7Z2ZZdjRZZafLPYuT6HFkjX9AzEEgqHY5tozYX/index.html /var/www/html
 LABEL Description="WebserverTor - Debian+apache2+php7+torRelay"
 EXPOSE 80
 RUN chown -R www-data: /var/www/html/.
