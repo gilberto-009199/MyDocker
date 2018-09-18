@@ -6,6 +6,7 @@ RUN apt-get install -y apache2 php7.0 |nl  && apt-get clean
 RUN echo "Iniciando a Instalação do TOR"
 RUN apt-get install -y tor|nl && apt-get clean
 RUN echo "Atenção!! O pat de segurança para o php.ini e o apache.conf \n Ainda não foi Implementado"
+RUN echo "Noticia!! O programa gerenciador de serviços logo será implementado"
 ENV APACHE_LOCK_DIR="/var/lock"
 ENV APACHE_PID_FILE="/var/run/apache2.pid"
 ENV APACHE_RUN_USER="www-data"
