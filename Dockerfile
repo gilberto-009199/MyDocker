@@ -1,6 +1,6 @@
 FROM debian
 MAINTAINER Gilberto Ramos de Oliveira <gilberto.tec@vivaldi.net>
-RUN apt-get uptade && apt-get install -y build-essential  nano apt-utils gpg && apt-get clean
+RUN apt-get update && apt-get install -y build-essential nano apt-utils gpg && apt-get clean
 RUN echo "Iniciando a Instalação dos Serviços"
 RUN apt-get install -y apache2 php7.0 |nl  && apt-get clean
 RUN echo "Iniciando a Instalação do TOR"
