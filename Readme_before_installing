@@ -1,0 +1,28 @@
+### Servidor Web PHP7 para rede tor ###
+
+#en
+
+Thank you for downloading the image.
+For installation, install:
+docker-ce + lvm
+Dependencies:
+Debian main image, apache2, tor, php7,
+nano, build-essential, gcc.
+
+After this execute:
+docker build.
+in the docker file directory
+
+#pt-br
+
+Obrigado por baixar a imagem.
+Para instalação, instale:
+docker-ce + lvm
+Dependecias:
+Debian principal imagem, apache2, tor,php7,
+nano, build-essencial, gcc. 
+
+Apos isso execute :
+docker build .
+no diretorio do docker file
+
