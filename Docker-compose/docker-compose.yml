@@ -1,0 +1,35 @@
+# No arquivo defemos definir a versão 
+version: '3'
+
+# Na hora de mostrar entenda que cada imagem docker
+# sera chamada de servico então nosso ambiente todo estara descrito no services:
+services:
+ #  <nome do servico>:
+ #    image: <nome da imagem>
+ #    container_name: <nome do container>
+ #    networks: # redes da qual o container fara parte
+ #      - <nome da rede>
+  laravel:
+# Casos a imagem não esteja publicada no docker e possivel usa ro build
+# exemplo:
+#   build:
+#     context:<diretorio com o arquivo docker>
+#     dockerfile:<nome do arquivo docker>
+    build:
+      context: ../Laravel
+      dockerfile: Dockerfile
+    image: gilbertoramos/laravel:latest
+    container_name: laravel_container
+    networks: 
+      - net_laravel
+  nginx:
+    image: gilbertoramos/nginx-vim:latest
+    container_name: nginx_container
+    networks: 
+      - net_laravel
+    ports:
+      - "8080:80"
+
+networks:
+  net_laravel:
+    driver: bridge

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-
+# docker build -t gilbertoramos/laravel:latest -f Dockerfile
 # Comandos:
 docker run -it --rm --name php php:7.4-cli bash
 cd /var/www
